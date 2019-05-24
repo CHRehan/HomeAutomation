@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorPrimaryDark" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="16.0dip"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Enter IP"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@color/black"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/component_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image10"
+                            android:layout_width="match_parent"
+                            android:layout_height="130.0dip"
+                            android:background="#fff6f6f6"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/light" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/button10"
+                            style="@style/Widget.AppCompat.CompoundButton.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10.0dip"
+                            android:text="OFF" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image11"
+                            android:layout_width="match_parent"
+                            android:layout_height="130.0dip"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/fan" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/button11"
+                            style="@style/Widget.AppCompat.CompoundButton.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10.0dip"
+                            android:text="OFF" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image12"
+                            android:layout_width="match_parent"
+                            android:layout_height="130.0dip"
+                            android:background="@color/colorPrimary"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ac" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/button12"
+                            style="@style/Widget.AppCompat.CompoundButton.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10.0dip"
+                            android:text="OFF" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image13"
+                            android:layout_width="match_parent"
+                            android:layout_height="150.0dip"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/led" />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/button13"
+                            style="@style/Widget.AppCompat.CompoundButton.Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10.0dip"
+                            android:text="OFF" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
